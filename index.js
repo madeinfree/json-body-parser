@@ -21,5 +21,7 @@ module.exports = (req, res, next) => {
       req.body = parseBody
       next()
     })
+  } else {
+    next()
   }
 }
